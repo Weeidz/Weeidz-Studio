@@ -1,0 +1,59 @@
+# Theme
+remote_theme: epidrome/cover-card@main
+
+# Title and tag line
+title: 'Weeidz Studio'
+description: 'Tailored solutions to capture attention and
+drive brand awareness and sales'
+
+# Images
+avatar: 'avatar.gif'
+background: 'background.jpg'
+favicon: 'favicon.ico'
+
+# Online profiles
+#behance: 'mydribbble'
+instagram: 'myinsta'
+youtube: 'myyoutube'
+email: 'denys.syniak@gmail.com'
+telegram: '@Weeidz'
+
+social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
+
+# Yaml manifest of supported social links
+# Requirements:
+# `name`
+#     - plain-text name of the site (e.g. twitter)
+#     - **mandatory**
+# `url-pattern`
+#     - site URL pattern containing a placeholder string (e.g. twitter.com/__USERNAME__)
+#     - placeholder will be replaced by username or value specified in _config.yml (e.g. twitter.com/mytwitter)
+#     - **mandatory**
+# `url-scheme`
+#     - the hardcoded URI/URN url-scheme (e.g. https://)
+#     - can be one of: ['https://', 'http://', 'mailto:']
+#     - defaults to '//'
+#     - **optional**
+# `icon-class`
+#     - the font awesome icon class names
+#     - font-awesome free and supports `fas` (solid) and `fab` (brands) styles
+#     - defaults to `fab` style and uses value of `name` attribute (e.g. fab fa-2x fa-twitter)
+#     - **optional**
+social-links:
+
+  - name: instagram
+    url-pattern: https://www.instagram.com/denys_syniak/
+
+  - name: youtube
+    url-pattern: https://www.youtube.com/@Weeidz_studio
+
+  - name: behance
+    url-pattern: https://www.behance.net/denys_syniak
+
+  - name: telegram
+    url-pattern: https://t.me/weeidz
+
+  - name: email
+    url-scheme: 'mailto:'
+    url-pattern: '__USERNAME__'
+    icon-class: far fa-2x fa-envelope-open
